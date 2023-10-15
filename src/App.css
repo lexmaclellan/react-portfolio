@@ -1,3 +1,7 @@
+:root {
+  --color-body: steelblue;
+}
+
 body {
-  background-color: steelblue;
+  background-color: var(--color-body);
 }
