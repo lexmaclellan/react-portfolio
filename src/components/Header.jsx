@@ -1,11 +1,11 @@
-function Hello() {
+function Header() {
     const hello = "Hello World"
 
     return (
-        <div>
+        <header>
             <h1>{hello}</h1>
-        </div>
+        </header>
     )
 }
 
-export default Hello
+export default Header
