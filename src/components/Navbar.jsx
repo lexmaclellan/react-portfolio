@@ -1,17 +1,18 @@
 function Navbar() {
-    const hello = "Hello World"
-
     return (
-        <nav>
-            <div className="row">
-                <div className="col text-center">
-                    About
+        <nav className="fixed-top text-center">
+            <div className="row p-3">
+                <div className="col-sm-3">
+                    <a href="#">About</a>
                 </div>
-                <div className="col text-center">
-                    Portfolio
+                <div className="col-sm-3">
+                    <a href="#">Portfolio</a>
                 </div>
-                <div className="col text-center">
-                    Contact
+                <div className="col-sm-3">
+                    <a href="#">Contact</a>
+                </div>
+                <div className="col-sm-3">
+                    <a href="#">Resume</a>
                 </div>
             </div>
         </nav>
