@@ -4,7 +4,7 @@ function Footer() {
     return (
         <footer className="text-center">
             <a href="https://github.com/lexrayne">
-                <img src={githubLogo} />
+                <img src={githubLogo} alt="GitHub Logo" />
             </a>
         </footer>
     )
