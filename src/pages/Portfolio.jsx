@@ -1,7 +1,15 @@
 function Portfolio() {
     return (
         <>
-        Portfolio
+        <h1>Portfolio</h1>
+        <div className='portfolio'>
+            <div className='sample'>Test</div>
+            <div className='sample'>Test</div>
+            <div className='sample'>Test</div>
+            <div className='sample'>Test</div>
+            <div className='sample'>Test</div>
+            <div className='sample'>Test</div>
+        </div>
         </>
     )
 }
