@@ -18,10 +18,6 @@ const router = createBrowserRouter([
         element: <Home />
       },
       {
-        path: '/react-portfolio',
-        element: <Home />
-      },
-      {
         path: '/Portfolio',
         element: <Portfolio />
       },
