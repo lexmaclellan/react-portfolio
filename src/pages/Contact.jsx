@@ -7,33 +7,33 @@ function Contact() {
     const handleSubmit = (e) => {
         e.preventDefault()
 
-        // const inputs = e.target.elements
-        // const data = {}
+        const inputs = e.target.elements
+        const data = {}
 
-        // for (let i = 0; i < inputs.length; i++) {
-        //     if (inputs[i].name) {
-        //         data[inputs[i].name] = inputs[i].value
-        //     }
-        // }
+        for (let i = 0; i < inputs.length; i++) {
+            if (inputs[i].name) {
+                data[inputs[i].name] = inputs[i].value
+            }
+        }
 
-        // fetch(FORM_ENDPOINT, {
-        //     method: 'POST',
-        //     headers: {
-        //         Accept: 'application/json',
-        //         'Content-Type': 'application/json'
-        //     },
-        //     body: JSON.stringify(data)
-        // })
-        // .then((response) => {
-        //     if (!response.ok) {
-        //         //throw new Error('Unable to submit form: Response not ok')
-        //     }
+        fetch(FORM_ENDPOINT, {
+            method: 'POST',
+            headers: {
+                Accept: 'application/json',
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(data)
+        })
+        .then((response) => {
+            if (!response.ok) {
+                throw new Error('Unable to submit form: Response not ok')
+            }
 
-        //     setSubmitted(true)
-        // })
-        // .catch((err) => {
-        //     e.target.submit()
-        // })
+            setSubmitted(true)
+        })
+        .catch((err) => {
+            e.target.submit()
+        })
     }
 
     if (submitted) {
@@ -48,7 +48,7 @@ function Contact() {
         <>
         <h1>Contact</h1>
         <form
-            //action={FORM_ENDPOINT}
+            action={FORM_ENDPOINT}
             onSubmit={handleSubmit}
             method='POST'
         >
