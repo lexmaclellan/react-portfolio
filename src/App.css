@@ -51,30 +51,6 @@ article {
   display: block;
 }
 
-article a {
-  color: var(--nav-text-color);
-  font-size: 18px;
-  font-weight: bold;
-}
-
-article a:link {
-  text-decoration: underline;
-}
-
-article a:visited {
-  text-decoration: underline;
-}
-
-article a:hover {
-  text-decoration: none;
-  color: lightskyblue;
-}
-
-article a:active {
-  text-decoration: none;
-  color: lightskyblue;
-}
-
 article img {
   width: 300px;
   height: 300px;
@@ -94,77 +70,11 @@ article h2 {
 }
 
 .portfolio {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
 }
 
 .sample {
-  flex: 1 1 22%;
-  height: 200px;
-  background-color: white;
-  background-size: 100% 100%;
-  margin: 10px;
-}
-
-.sample a {
-  color: var(--navbar-bg-color);
-  font-size: 18px;
-  font-weight: bold;
-}
-
-.sample a:link {
-  text-decoration: underline;
-}
-
-.sample a:visited {
-  text-decoration: underline;
-}
-
-.sample a:hover {
-  text-decoration: none;
-  color: lightskyblue;
-}
-
-.sample a:active {
-  text-decoration: none;
-  color: lightskyblue;
-}
-
-.sample p {
-  margin: 5px;
-  background-color: white;
-  color: var(--navbar-bg-color);
-}
-
-.poke {
-    background-image: url('https://lexrayne.github.io/Portfolio/assets/images/pokeplaylist.jpg');
-    background-size: 100% 100%;
-}
-
-.fresh {
-    background-image: url('https://lexrayne.github.io/Portfolio/assets/images/freshfinder.jpg');
-    background-size: 100% 100%;
-}
-
-.pictalk {
-    background-image: url('https://lexrayne.github.io/Portfolio/assets/images/pictalk.jpg');
-    background-size: 100% 100%;
-}
-
-input, textarea {
-  width: 90%;
-  margin: 5px 0;
-  border-radius: 5px;
-}
-
-button {
-  border: 2px solid var(--navbar-bg-color);
-  background-color: white;
-  color: var(--navbar-bg-color);
-  font-weight: bold;
-  margin: 5px 0;
-  border: 1px solid transparent;
-  border-radius: 5px;
+  display: inline-grid;
 }
 
 footer {
@@ -175,5 +85,4 @@ footer {
 footer img {
   width: 50px;
   height: 50px;
-  margin: 0 20px;
 }
