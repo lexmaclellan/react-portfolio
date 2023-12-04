@@ -16,9 +16,6 @@ function Navbar() {
                 <div className="col-sm-3">
                     <NavLink to='/Contact'>Contact</NavLink>
                 </div>
-                <div className="col-sm-3">
-                    <NavLink to='/Resume'>Resume</NavLink>
-                </div>
             </div>
         </nav>
     )
